@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragment_main">
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.teamproject.MainFragment"
+        android:label="Main Page"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_main_to_prof_create"
+            app:destination="@id/fragment_prof_create" />
+        <action
+            android:id="@+id/action_main_to_prof_update"
+            app:destination="@id/fragment_prof_update" />
+        <action
+            android:id="@+id/action_main_to_prof_delete"
+            app:destination="@id/fragment_prof_delete" />
+        <action
+            android:id="@+id/action_main_to_prof_info"
+            app:destination="@id/fragment_prof_info" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_prof_create"
+        android:name="com.example.teamproject.profCreate"
+        android:label="Create Professor"
+        tools:layout="@layout/fragment_prof_create" >
+        <action
+            android:id="@+id/action_fragment_prof_create_to_main"
+            app:destination="@id/fragment_main" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_prof_update"
+        android:name="com.example.teamproject.profUpdate"
+        android:label="Update Professor"
+        tools:layout="@layout/fragment_prof_update" >
+        <action
+            android:id="@+id/action_fragment_prof_update_to_main"
+            app:destination="@id/fragment_main" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_prof_delete"
+        android:name="com.example.teamproject.profDelete"
+        android:label="Delete Professor"
+        tools:layout="@layout/fragment_prof_delete" >
+        <action
+            android:id="@+id/action_fragment_prof_delete_to_main"
+            app:destination="@id/fragment_main" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_prof_info"
+        android:name="com.example.teamproject.profInfo"
+        android:label="Professor Info"
+        tools:layout="@layout/fragment_prof_info" >
+        <action
+            android:id="@+id/action_fragment_prof_info_to_main"
+            app:destination="@id/fragment_main" />
+    </fragment>
+</navigation>

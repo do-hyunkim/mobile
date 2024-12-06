@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">TeamProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="prof_info_title">교수 정보 입력</string>
+    <string name="prof_name_hint">교수명</string>
+    <string name="prof_degree_hint">학위</string>
+    <string name="prof_university_hint">출신 대학</string>
+    <string name="prof_field_hint">연구 분야</string>
+    <string name="prof_email_hint">이메일</string>
+    <string name="prof_website_hint">홈페이지</string>
+    <string name="prof_lab_hint">연구실 위치</string>
+    <string name="create_button">등록</string>
+    <string name="prof_delete_title">교수 정보 삭제</string>
+    <string name="prof_delete_message">삭제할 교수를 선택해주세요</string>
+    <string name="delete_button">삭제하기</string>
+    <string name="cancel_button">취소</string>
+    <string name="prof_update_title">교수 정보 수정</string>
+    <string name="update_button">수정</string>
+    <string name="prof_name">%s</string>
+    <string name="prof_degree">학위: %s</string>
+    <string name="prof_university">출신 대학: %s</string>
+    <string name="prof_field">연구 분야: %s</string>
+    <string name="prof_email">이메일: %s</string>
+    <string name="prof_website">홈페이지: %s</string>
+    <string name="prof_lab">연구실 위치: %s</string>
+</resources>
